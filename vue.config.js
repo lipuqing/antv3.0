@@ -1,16 +1,6 @@
 // const path = require("path");
 let node_env = process.env.NODE_ENV;
-let baseUrl = process.env.VUE_AJAX_API;
-console.log(node_env, baseUrl);
-
-// function resolve(dir) {
-//   console.log(__dirname +'1', dir +'2')
-//   return path.join(__dirname, dir);
-// }
-
-// console.log(resolve('test'))
-
-// const CompressionPlugin = require("compression-webpack-plugin");
+// let baseUrl = process.env.VUE_AJAX_API;
 
 module.exports = {
   publicPath: "./",
@@ -55,12 +45,6 @@ module.exports = {
     hot: true, // 保存实时刷新
     open: true,
   },
-  // configureWebpack:{
-  //   output:{
-  //     filename: node_env === "development" ? `[name].js` : `[name].[contenthash:5].js`,
-  //     chunkFilename: node_env === "development" ? `[name].js` : `[name].[contenthash:5].js`,
-  //   }
-  // },
   // 第三方插件
   pluginOptions: {},
 };
