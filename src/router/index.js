@@ -13,6 +13,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+  {
+    path: "/nav",
+    name: "Nav",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/nav3.vue"),
+  },
 ];
 
 const router = createRouter({
